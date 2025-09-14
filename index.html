@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Hosea's Portfolio Page</title>
     <link rel="stylesheet" href="style.css">
 
      <!-- Google Fonts go here -->
@@ -15,8 +15,13 @@
     <div class="main">
       <div class="navbar">
         <h1 class="hosea"> HOSEA</h1>
-         
-        <ul>
+         <div class="hamburger" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+
+         </div>
+        <ul id="nav-links">
            <li><a href="index.html">HOME</a></li>
            <li><a href="#about">ABOUT ME</a></li>
            <li><a href="#myskills">SKILLS</a></li>
@@ -28,9 +33,9 @@
       <div  class="info">
         <h3><span>Hi, I'm Hosea.</span></h3>
         <h1><span>W</span>EB <span>D</span>ESIGNER</h1>
-        <h3>Front-end developer and Web designer. I bring ideas to life.<br>
+        <h3><span>Front-end developer and Web designer. I bring ideas to life.<br>
             I create websites to help businesses grow online. <br>
-            I'm also a seasoned writer who creates art<br> when building offline.
+            I'm also a seasoned writer who creates art<br> when building offline.</span>
         </h3>
 
        <a
@@ -45,7 +50,7 @@
     
 
       <div class="image">
-        <img src="images\My Picture.jpg" alt="my-picture">
+        <img src="images/My Picture.jpg" alt="my-picture">
       </div>
     </div>     
 
@@ -117,28 +122,31 @@
           <button type="submit">Submit</button>
           <p id="success">Submission Successful!</p>
           </form>
-        </div>
+      
      </section>
 
      <footer>
     
       <div class="social-icons">
        <div class="icon-with-text">
-        <a href="https://www.tiktok.com/@yourusername" target="_blank"></a>
+        <a href="https://www.tiktok.com/@hosea_the_auteur?_t=ZS-8zbT8iBigL6&_r=1" target="_blank">
        <i class="fa-brands fa-tiktok"></i>
+       </a>
        <!-- <span>TikTok</span> -->
       </div>
    
   
       <div class="icon-with-text">
-        <a href="https://www.instagram.com/yourusername" target="_blank"></a>
+        <a href="https://www.instagram.com/hosea_._?igsh=bGxuYzYzNDRyYmQy" target="_blank">
        <i class="fa-brands fa-instagram"></i>
+       </a>
        <!-- <span>Instagram</span> -->
       </div>
 
       <div class="icon-with-text">
-        <a href="https://wa.me/2348162734990?text=Hi,%20nice%20to%20meet%20you%20Hosea" target="_blank"></a>
+        <a href="https://wa.me/2348162734990?text=Hi,%20nice%20to%20meet%20you%20Hosea" target="_blank">
        <i class="fa-brands fa-whatsapp"></i>
+       </a>
        <!-- <span>WhatsApp</span> -->
       </div>
     </div>
@@ -147,6 +155,16 @@
       <p>&copy; 2025 Hosea Samaila. All rights reserved.</p>
     </div>  
      </footer>
+
+
+   <script>
+    function toggleMenu() {
+      const menu = document.getElementById('nav-links');
+      const burger = document.querySelector('.hamburger');
+      menu.classList.toggle('show');
+      burger.classList.toggle('active');
+    }
+   </script>  
 
 
      
